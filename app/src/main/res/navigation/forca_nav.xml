@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/widrathFund">
+    <fragment
+        android:id="@+id/widrathFund"
+        android:name="com.example.forsa.Vendor.WidrathFund"
+        android:label="fragment_widrath_fund"
+        tools:layout="@layout/fragment_widrath_fund" >
+        <action
+            android:id="@+id/action_widrathFund_to_addItems"
+            app:destination="@id/addItems" />
+    </fragment>
+    <fragment
+        android:id="@+id/location2"
+        android:name="com.example.forsa.Vendor.Location"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" >
+        <action
+            android:id="@+id/action_location2_to_addItemsImages"
+            app:destination="@id/addItemsImages" />
+    </fragment>
+    <fragment
+        android:id="@+id/addItems"
+        android:name="com.example.forsa.Vendor.AddItems"
+        android:label="fragment_add_items"
+        tools:layout="@layout/fragment_add_items" />
+    <fragment
+        android:id="@+id/addItemsImages"
+        android:name="AddItemsImages"
+        android:label="AddItemsImages" />
+    <fragment
+        android:id="@+id/productView"
+        android:name="ProductView"
+        android:label="ProductView" />
+    <fragment
+        android:id="@+id/allitems"
+        android:name="com.example.forsa.Vendor.Allitems"
+        android:label="fragment_allitems"
+        tools:layout="@layout/fragment_allitems" />
+    <fragment
+        android:id="@+id/updateBusinessInfo"
+        android:name="com.example.forsa.Vendor.UpdateBusinessInfo"
+        android:label="fragment_update_business_info"
+        tools:layout="@layout/fragment_update_business_info" />
+    <fragment
+        android:id="@+id/updatePersonalInfo"
+        android:name="com.example.forsa.Vendor.UpdatePersonalInfo"
+        android:label="fragment_update_personal_info"
+        tools:layout="@layout/fragment_update_personal_info" />
+</navigation>

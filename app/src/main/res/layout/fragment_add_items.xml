@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Vendor.AddItems">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:forceDarkAllowed="false"
+                android:orientation="vertical"
+                android:background="#F8F8F8"
+                android:padding="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:paddingBottom="5dp"
+                          android:text="Title"
+                          android:fontFamily="@font/sf_one"
+                          android:textColor="@color/black" />
+                      <com.google.android.material.textfield.TextInputEditText
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="20dp"
+                          android:background="@drawable/edittext_bg_vendor"
+                          android:drawablePadding="10dp"
+                          android:inputType="text"
+                          android:fontFamily="@font/sf_one"
+                          android:maxLines="1"
+                          android:padding="15dp"
+                          android:textColor="@color/black">
+
+                      </com.google.android.material.textfield.TextInputEditText>
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:paddingBottom="5dp"
+                          android:text="Size"
+                          android:fontFamily="@font/sf_one"
+                          android:textColor="@color/black" />
+                      <com.google.android.material.textfield.TextInputEditText
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="20dp"
+                          android:background="@drawable/edittext_bg_vendor"
+                          android:drawablePadding="10dp"
+                          android:inputType="text"
+                          android:fontFamily="@font/sf_one"
+                          android:maxLines="1"
+                          android:padding="15dp"
+                          android:textColor="@color/black"></com.google.android.material.textfield.TextInputEditText>
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:paddingBottom="5dp"
+                          android:text="Condition"
+                          android:fontFamily="@font/sf_one"
+                          android:textColor="@color/black" />
+                      <com.google.android.material.textfield.TextInputEditText
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="20dp"
+                          android:background="@drawable/edittext_bg_vendor"
+                          android:drawablePadding="10dp"
+                          android:inputType="text"
+                          android:fontFamily="@font/sf_one"
+                          android:maxLines="1"
+                          android:padding="15dp"
+                          android:textColor="@color/black"></com.google.android.material.textfield.TextInputEditText>
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:paddingBottom="5dp"
+                          android:text="Description"
+                          android:fontFamily="@font/sf_one"
+                          android:textColor="@color/black" />
+                      <com.google.android.material.textfield.TextInputEditText
+                          android:layout_width="match_parent"
+                              android:layout_height="@dimen/_200sdp"
+                              android:fontFamily="@font/sf_one"
+                              android:hint="Type Here"
+                              android:textSize="@dimen/_14sdp"
+                              android:padding="@dimen/_5sdp"
+                              android:gravity="start"
+                              android:layout_marginBottom="20dp"
+                              android:inputType="textCapSentences|textMultiLine"
+                              android:background="@drawable/edittext_bg_vendor"
+                              android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="Catogery"
+                    android:fontFamily="@font/sf_one"
+                    android:textColor="@color/black" />
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    app:spinner_item_array="@array/catogery"
+                    android:background="@drawable/edittext_bg_vendor"
+                    android:drawablePadding="10dp"
+                    android:padding="15dp"
+                    app:spinner_popup_animation="normal"
+                    app:spinner_arrow_tint="@color/black"
+                    android:textColor="@color/black">
+
+                </com.skydoves.powerspinner.PowerSpinnerView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="Sub Catogery"
+                    android:fontFamily="@font/sf_one"
+                    android:textColor="@color/black" />
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    app:spinner_item_array="@array/sub_catogery"
+                    android:background="@drawable/edittext_bg_vendor"
+                    android:drawablePadding="10dp"
+                    android:padding="15dp"
+                    app:spinner_popup_animation="normal"
+                    app:spinner_arrow_tint="@color/black"
+                    android:textColor="@color/black">
+
+                </com.skydoves.powerspinner.PowerSpinnerView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="Brand"
+                    android:fontFamily="@font/sf_one"
+                    android:textColor="@color/black" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edittext_bg_vendor"
+                    android:drawablePadding="10dp"
+                    android:inputType="text"
+                    android:fontFamily="@font/sf_one"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textColor="@color/black"></com.google.android.material.textfield.TextInputEditText>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="Price"
+                    android:fontFamily="@font/sf_one"
+                    android:textColor="@color/black" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edittext_bg_vendor"
+                    android:drawablePadding="10dp"
+                    android:inputType="text"
+                    android:fontFamily="@font/sf_one"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textColor="@color/black"></com.google.android.material.textfield.TextInputEditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="4dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true"
+                        app:strokeColor="#B7B7B7"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_12sdp"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/add_item_location_iconi" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sf_one"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="SELECT LOCATION" />
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="4dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true"
+                        app:strokeColor="#B7B7B7"
+                        app:strokeWidth="1dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_12sdp"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/galleryImg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:src="@drawable/additem_addimages_icon" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sf_one"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="ADD IMAGES" />
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/additemNextbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@drawable/button_bg_vendor"
+                    android:fontFamily="@font/sf_one"
+                    android:text="Next"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp">
+
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

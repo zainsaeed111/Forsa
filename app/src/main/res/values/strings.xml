@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Forsa</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="catogery">
+        <item>Women</item>
+        <item>Kids</item>
+        <item>Home</item>
+        <item>Entertainment</item>
+        <item>Pet Care</item>
+    </string-array>
+    <string-array name="sub_catogery">
+        <item>Cloths</item>
+        <item>Shoes</item>
+        <item>Bags</item>
+        <item>Cosmetics</item>
+    </string-array>
+</resources>
